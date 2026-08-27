@@ -44,7 +44,7 @@ Nested data is also transformed into separate datasets, such as cart items and t
 ## Project Structure
 
 ```text
-02_Project/
+DummyJSON-ETL-Pipeline/
 │
 ├── .env.example
 ├── .gitignore
