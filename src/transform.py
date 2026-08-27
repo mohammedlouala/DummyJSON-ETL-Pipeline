@@ -112,7 +112,7 @@ def transform_post():
 
     return df
 
-def tags_info():
+def tags():
     df = extract('posts')
 
     df = df[[
