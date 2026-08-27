@@ -1,5 +1,5 @@
 import pandas as pd
-from extract import extract
+from src.extract import extract
 
 def transform_product():
     df = extract('products')
@@ -17,7 +17,7 @@ def transform_product():
 
     df['title'].str.lower()
     df['category'].str.lower()
-    df['availabilityStatus'].str.lower()
+    df['availability_Status'].str.lower()
 
     return df
 
@@ -40,7 +40,7 @@ def transform_user():
         'company.department' : 'department'
     })
 
-    df['birthDate'] = pd.to_datetime(df['birthDate'])
+    df['birth_date'] = pd.to_datetime(df['birth_date'])
 
     return df
 
